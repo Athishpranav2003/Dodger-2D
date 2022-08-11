@@ -1,7 +1,6 @@
+#pip install libraries pygame and mysql connector before execution
 import pygame 
 import random  
-import mysql.connector as mys    
-
 import mysql.connector as mys  # This module is used to link the databases with game
 
 conn_object = mys.connect(
