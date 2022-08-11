@@ -4,17 +4,15 @@ import random
 import mysql.connector as mys  # This module is used to link the databases with game
 
 conn_object = mys.connect(
-    host="localhost",
+    host="localhost",      #please change the credentials to the local mySQL server
     user="root",
     passwd="athish22",
     database="game")  # This is the initialisation of connection object
 if conn_object.is_connected():
-    con = 1
     # This block is to make sure that connection is established
     print("Succesfully connected to database")
     print()
-else:
-    con = 0
+
 
 cursor = conn_object.cursor()
 
